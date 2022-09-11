@@ -1138,6 +1138,12 @@ LUA_API int lua_resume(lua_State *L, int nargs)
   return LUA_ERRRUN;
 }
 
+LUA_API void lua_resetthread(lua_State *L, lua_State *th)
+{
+  // TODO: just a useless stub to placate compiler
+  return LUA_ERRERR;
+}
+
 /* -- GC and memory management -------------------------------------------- */
 
 LUA_API int lua_gc(lua_State *L, int what, int data)
